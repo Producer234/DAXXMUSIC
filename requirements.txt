@@ -17,6 +17,8 @@ requests
 pickledb
 pycountry
 pycryptodome
+TgCrypto
+gitpython
 pydub
 pyfiglet
 pyshorteners
