@@ -30,6 +30,8 @@ cloudscraper
 curl-cffi
 lexica-api
 g4f
+wget
+bing-image-downloader
 
 # HTML / scraping / text processing
 beautifulsoup4
@@ -58,7 +60,7 @@ opencv-python
 youtube_dl==2021.12.17
 yt-dlp
 pytube
-bing_image_downloader
+
 
 # Optional / extra APIs
 instaloader
