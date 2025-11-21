@@ -58,6 +58,7 @@ opencv-python
 youtube_dl==2021.12.17
 yt-dlp
 pytube
+bing_image_downloader
 
 # Optional / extra APIs
 instaloader
