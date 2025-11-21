@@ -51,8 +51,8 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("ALLTYPECC")
-                await self.one.join_chat("gitwizardbypass")
+                await self.one.join_chat("main_channel_pr")
+                await self.one.join_chat("pr_all_bot_support")
             except:
                 pass
             assistants.append(1)
@@ -72,8 +72,8 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("ALLTYPECC")
-                await self.one.join_chat("gitwizardbypass")
+                await self.two.join_chat("main_channel_pr")
+                await self.one.join_chat("pr_all_bot_support")
             except:
                 pass
             assistants.append(2)
