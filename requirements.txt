@@ -52,6 +52,7 @@ heroku3
 
 # Database
 motor
+mysql
 
 # Audio / Video / Music (required for music bot)
 ffmpeg-python
