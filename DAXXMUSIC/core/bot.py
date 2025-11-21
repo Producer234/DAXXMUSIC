@@ -54,32 +54,28 @@ class DAXX(Client):
                     "Ensure the bot is added to the channel."
                 )
                 if attempt == 2:
-                    sys.exit(1)
+                    LOGGER(__name__).warning("Skipping log message due to repeated failure.")
             except Exception as ex:
                 LOGGER(__name__).error(
                     f"Failed to send log message. Attempt {attempt + 1}/3\n"
                     f"Reason: {type(ex).__name__}\n{traceback.format_exc()}"
                 )
                 await asyncio.sleep(3)
-        else:
-            sys.exit(1)
 
         # Check admin rights in log channel
         try:
             member = await self.get_chat_member(config.LOGGER_ID, self.id)
             if member.status != ChatMemberStatus.ADMINISTRATOR:
-                LOGGER(__name__).error(
+                LOGGER(__name__).warning(
                     "Bot is not an admin in the log group/channel. Promote it to admin."
                 )
-                sys.exit(1)
         except Exception as ex:
-            LOGGER(__name__).error(
+            LOGGER(__name__).warning(
                 f"Failed to verify admin status in log channel.\n{traceback.format_exc()}"
             )
-            sys.exit(1)
 
         LOGGER(__name__).info(f"Music Bot Started as {self.name}")
 
     async def stop(self):
         await super().stop()
-        LOGGER(__name__).info(f"Music Bot Stopped Successfully")
+        LOGGER(__name__).info("Music Bot Stopped Successfully")
