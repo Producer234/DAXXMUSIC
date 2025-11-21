@@ -7,15 +7,29 @@ from pyrogram import Client
 from SafoneAPI import SafoneAPI
 from .logging import LOGGER
 
+# Update directories
 dirr()
-git()
+
+# Only run git updater if .git exists (VPS/Local only)
+import os
+if os.path.exists(".git"):
+    try:
+        git()
+    except Exception as e:
+        LOGGER(__name__).warning(f"Git updater skipped: {e}")
+else:
+    LOGGER(__name__).info("Skipping git updater on Heroku (no .git folder).")
+
+# Initialize databases / Heroku config
 dbb()
 heroku()
 
+# Initialize clients
 app = DAXX()
 api = SafoneAPI()
 userbot = Userbot()
 
+# Platforms
 from .platforms import *
 
 Apple = AppleAPI()
