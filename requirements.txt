@@ -63,7 +63,6 @@ stripe==10.7.0
 mysql-connector-python==9.0.0
 telebot==0.0.5
 youtube_dl==2021.12.17
-git+https://github.com/DAXXTEAM/daxxhub
 pornhub-api==0.3.0
 pyrogram==2.0.106
 python-telegram-bot==21.1.1
