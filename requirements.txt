@@ -31,7 +31,7 @@ curl-cffi
 lexica-api
 g4f
 wget
-bing-image-downloader
+
 
 # HTML / scraping / text processing
 beautifulsoup4
@@ -52,7 +52,6 @@ heroku3
 
 # Database
 motor
-mysql
 
 # Audio / Video / Music (required for music bot)
 ffmpeg-python
@@ -88,4 +87,7 @@ speedtest-cli
 telebot==0.0.5
 youtube-search
 youtube-search-python
+wget
+mysql-connector-python
+bing_image_downloader
 git+https://github.com/AsmSafone/SafoneAPI.git
