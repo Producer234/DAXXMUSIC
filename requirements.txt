@@ -17,6 +17,7 @@ requests
 pickledb
 pycountry
 pycryptodome
+heroku3
 TgCrypto
 gitpython
 pydub
