@@ -17,6 +17,7 @@ dnspython
 emojis
 Faker
 ffmpeg-python
+opencv-python-headless==4.8.1.78
 future
 g4f
 geopy
