@@ -1,77 +1,50 @@
-aiofiles
+# Core async libraries
 aiohttp
-apscheduler
+aiofiles
 asyncio
-bard
-beautifulsoup4
-bing_image_downloader
-bs4
-telegraph
-wget
-unidecode
-cloudscraper
-daxxhub
-curl-cffi
-deepai
-dnspython
-emojis
-Faker
-ffmpeg-python
-opencv-python-headless==4.8.1.78
-future
-g4f
-geopy
-gitpython
-google-api-python-client
-gpytranslate
-gtts
-hachoir
-heroku3
+apscheduler
 httpx[http2]==0.27.2
-img2pdf
-instaloader
-langdetect
-lexica-api
-motor
-nekosbest
-numpy
-openai==0.28.0
-opencv-python
+
+# Telegram bot libraries (choose one)
+pyrogram==2.0.106
+# python-telegram-bot==21.1.1   # Only if you want PTB instead of Pyrogram
+
+# Utilities
+python-dotenv
+pytz
+unidecode
+requests
 pickledb
-pillow==10.3.0
-psutil
-ntgcalls
-py-tgcalls==0.9.7  # Only one version of py-tgcalls is specified
 pycountry
 pycryptodome
 pydub
 pyfiglet
-pykeyboard
 pyshorteners
-python-dotenv
-python-telegram-bot
-python-whois
-pyttsx3
-pytube
-pytz
-pyyaml
 qrcode
-requests
-search_engine_parser
 speedtest-cli
+emojis
+Faker
+geopy
+cloudscraper
+curl-cffi
+lexica-api
+g4f
+
+# Media / Text
+beautifulsoup4
+bs4
+telegraph
+gtts
 SpeechRecognition
-spotipy
-stripe==10.7.0
-mysql-connector-python==9.0.0
-telebot==0.0.5
-youtube_dl==2021.12.17
-pornhub-api==0.3.0
-pyrogram==2.0.106
-python-telegram-bot==21.1.1
-pyyaml==6.0.1
+img2pdf
+pillow==10.3.0
+
+# Optional API clients
+google-api-python-client
 MukeshAPI
-youtube-search
-youtube-search-python
-git+https://github.com/KurimuzonAkuma/pyrogram.git
-git+https://github.com/yt-dlp/yt-dlp.git
-git+https://github.com/AsmSafone/SafoneAPI
+
+# Audio / video helpers (only if required)
+# ffmpeg-python      # Remove and use apt buildpack instead
+# opencv-python-headless==4.8.1.78  # Optional, huge size
+# youtube_dl / yt-dlp / pytube / youtube-search / youtube-search-python
+# Instaloader / pornhub-api / spotipy / stripe
