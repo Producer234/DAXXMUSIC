@@ -1,13 +1,16 @@
 # Core async libraries
-aiohttp
 aiofiles
+aiohttp
 asyncio
 apscheduler
 httpx[http2]==0.27.2
 
-# Telegram bot libraries (choose one)
+# Telegram bot library
 pyrogram==2.0.106
-# python-telegram-bot==21.1.1   # Only if you want PTB instead of Pyrogram
+# python-telegram-bot==21.1.1   # Only if you prefer PTB instead of Pyrogram
+
+# Speedups
+TgCrypto
 
 # Utilities
 python-dotenv
@@ -17,14 +20,10 @@ requests
 pickledb
 pycountry
 pycryptodome
-heroku3
-TgCrypto
-gitpython
 pydub
 pyfiglet
 pyshorteners
 qrcode
-speedtest-cli
 emojis
 Faker
 geopy
@@ -33,7 +32,7 @@ curl-cffi
 lexica-api
 g4f
 
-# Media / Text
+# HTML / scraping / text processing
 beautifulsoup4
 bs4
 telegraph
@@ -42,12 +41,47 @@ SpeechRecognition
 img2pdf
 pillow==10.3.0
 
-# Optional API clients
+# API clients
 google-api-python-client
 MukeshAPI
 
-# Audio / video helpers (only if required)
-# ffmpeg-python      # Remove and use apt buildpack instead
-# opencv-python-headless==4.8.1.78  # Optional, huge size
-# youtube_dl / yt-dlp / pytube / youtube-search / youtube-search-python
-# Instaloader / pornhub-api / spotipy / stripe
+# Git / Heroku
+gitpython
+heroku3
+
+# Database
+motor
+
+# Audio / Video / Music (required for music bot)
+ffmpeg-python
+opencv-python-headless==4.8.1.78
+opencv-python
+youtube_dl==2021.12.17
+yt-dlp
+pytube
+
+# Optional / extra APIs
+instaloader
+pornhub-api==0.3.0
+spotipy
+stripe==10.7.0
+
+# Translation / language
+gpytranslate
+langdetect
+
+# Telegram / Pyrogram add-ons
+py-tgcalls==0.9.7
+ntgcalls
+
+# Other utilities
+python-telegram-bot
+pyyaml==6.0.1
+python-whois
+pyttsx3
+pykeyboard
+search_engine_parser
+speedtest-cli
+telebot==0.0.5
+youtube-search
+youtube-search-python
