@@ -83,6 +83,7 @@ python-whois
 pyttsx3
 pykeyboard
 search_engine_parser
+daxxhub
 speedtest-cli
 telebot==0.0.5
 youtube-search
