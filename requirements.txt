@@ -7,8 +7,7 @@ httpx[http2]==0.27.2
 
 # Telegram bot library
 pyrogram==2.0.106
-# python-telegram-bot==21.1.1   # Only if you prefer PTB instead of Pyrogram
-
+ python-telegram-bot
 # Speedups
 TgCrypto
 
