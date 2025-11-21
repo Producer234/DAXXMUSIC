@@ -10,6 +10,7 @@ telegraph
 wget
 unidecode
 cloudscraper
+daxxhub
 curl-cffi
 deepai
 dnspython
